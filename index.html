@@ -3,67 +3,69 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SkyShop • Strona Główna</title>
+  <title>SkyShop — Oficjalna Strona</title>
+
   <link rel="stylesheet" href="style.css" />
-  <script src="cookie.js" defer></script>
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <header class="navbar">
-    <img src="https://i.postimg.cc/1tk1PWhv/image.png" class="logo" />
-    <nav>
-      <a href="#team">Zespół</a>
-      <a href="#services">Usługi</a>
-      <a href="#contact">Kontakt</a>
-      <a href="https://dsc.gg/skyshop" target="_blank">Discord</a>
-    </nav>
+
+  <!-- Cookie popup -->
+  <div id="cookie-popup" class="popup hidden">
+    <div class="popup-content">
+      <h2>Cookies</h2>
+      <p>Ta strona używa plików cookie, aby działała poprawnie.</p>
+      <button id="accept-cookies">Akceptuję</button>
+    </div>
+  </div>
+
+  <header class="hero">
+    <img src="https://i.postimg.cc/1tk1PWhv/image.png" class="logo" alt="SkyShop Logo">
+    <h1>SkyShop</h1>
+    <p>Oficjalny sklep i strona programistów SkyShop</p>
+    <a href="https://dsc.gg/skyshop" class="btn">Dołącz na Discord</a>
   </header>
 
-  <section class="hero">
-    <h1>SkyShop</h1>
-    <p>Skrypty • Pluginy • Boty DC • Strony WWW</p>
-  </section>
-
-  <section id="team" class="team">
+  <section class="team">
     <h2>Nasz Zespół</h2>
-    <div class="member-grid">
+
+    <div class="team-grid">
 
       <div class="member">
-        <img src="https://i.postimg.cc/jSPK5Ydk/72ac6350ba231b213d4eeaec594e68ab.png" />
+        <img src="https://i.postimg.cc/jSPK5Ydk/72ac6350ba231b213d4eeaec594e68ab.png" alt="Pawełek">
         <h3>Pawełek</h3>
-        <p>Właściciel • Technik MC</p>
-        <p>Tworzy skrypty i pluginy do Minecraft</p>
+        <p><b>Właściciel, Technik MC</b><br>Tworzy skrypty i pluginy do Minecraft.</p>
       </div>
 
       <div class="member">
-        <img src="https://i.postimg.cc/k41PZnfB/c735bf09fc0df442a640dd1d6383d578.png" />
+        <img src="https://i.postimg.cc/k41PZnfB/c735bf09fc0df442a640dd1d6383d578.png" alt="D4presja">
         <h3>D4presja</h3>
-        <p>CEO • Współwłaściciel</p>
-        <p>Tworzy boty Discord, strony, skrypty i pluginy</p>
+        <p><b>CEO, Współwłaściciel</b><br>Tworzy boty Discord, strony, skrypty i pluginy.</p>
       </div>
 
     </div>
   </section>
 
-  <section id="services" class="services">
-    <h2>Usługi</h2>
-    <ul>
-      <li>Pluginy Minecraft</li>
-      <li>Skrypty Minecraft</li>
-      <li>Boty Discord</li>
-      <li>Strony internetowe</li>
-      <li>API i systemy backendowe</li>
-    </ul>
+  <section class="examples">
+    <h2>Przykładowe Projekty</h2>
+    <div class="example-box">
+      <h3>SkyShop Pluginy</h3>
+      <p>Nowoczesne rozwiązania i systemy dla serwerów Minecraft.</p>
+    </div>
+
+    <div class="example-box">
+      <h3>Boty Discord</h3>
+      <p>Panele WWW, systemy ekonomii, integracje API.</p>
+    </div>
+
+    <div class="example-box">
+      <h3>Strony Internetowe</h3>
+      <p>Nowoczesne serwisy, integracje i projekty pod Vercel.</p>
+    </div>
   </section>
 
-  <section id="contact" class="contact">
-    <h2>Kontakt</h2>
-    <p>Dołącz do nas na Discordzie: <a href="https://dsc.gg/skyshop">SkyShop Discord</a></p>
-  </section>
-
-  <div id="cookiePopup" class="cookie-popup">
-    <p>Ta strona używa plików cookie, aby zapewnić najlepsze doświadczenie.</p>
-    <button id="acceptCookie">OK</button>
-  </div>
-
+  <footer>
+    <p>© 2025 SkyShop — Wszelkie prawa zastrzeżone.</p>
+  </footer>
 </body>
 </html>

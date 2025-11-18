@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: #0b0014;
+  color: white;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #7f00ff, #b300ff, #9d00ff);
+  animation: gradientMove 6s infinite alternate ease-in-out;
+}
+
+@keyframes gradientMove {
+  0% { background-position: left; }
+  100% { background-position: right; }
+}
+
+.logo {
+  width: 140px;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 0 10px #d479ff);
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: #ffffff22;
+  padding: 12px 25px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  backdrop-filter: blur(8px);
+  transition: 0.2s;
+}
+.btn:hover {
+  background: #ffffff44;
+}
+
+.team {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.team-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.member {
+  background: #1b0126;
+  padding: 30px;
+  border-radius: 20px;
+  width: 260px;
+  box-shadow: 0 0 20px #a200ff55;
+  transition: 0.3s;
+}
+.member:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 30px #c400ffaa;
+}
+
+.member img {
+  width: 120px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 20px #8c00ff;
+}
+
+.examples {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.example-box {
+  background: #15001e;
+  padding: 25px;
+  border-radius: 18px;
+  margin: 20px auto;
+  max-width: 600px;
+  box-shadow: 0 0 15px #8c00ff55;
+  transition: 0.25s;
+}
+.example-box:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px #b500ffdd;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  margin-top: 40px;
+  background: #0d0017;
+  color: #cccccc;
+}
+
+/* COOKIE POPUP */
+
+.popup {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: #240033;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #a200ff;
+  max-width: 300px;
+  animation: fadeIn 0.5s;
+}
+
+.hidden {
+  display: none;
+}
+
+.popup-content button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #9e00ff;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.popup-content button:hover {
+  background: #b300ff;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
